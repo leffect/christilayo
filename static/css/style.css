@@ -2296,6 +2296,7 @@ input[type=checkbox]:checked + label:before {
 
 .car-box .facilities-list li span i{
     margin-right: 5px;
+
 }
 
 /** MODAL BODY DESIGN STARTED**/
@@ -7870,7 +7871,7 @@ table {
 }
 
 .red-plate {
-    background: #f0151f
+    background: #1F2B8F
 }
 
 .green-light-plate {
@@ -9736,7 +9737,7 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
         color: #495057 !important;
 }
 .contact-dealer.modal-header{
-    background: #f0151f !important;
+    background: #1F2B8F !important;
 }
 .contact-dealer.modal-header img{
     width: 75% !important;
@@ -9748,7 +9749,7 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     padding-right: 20px;
     margin-bottom: 0;
     line-height: 49px;
-    color: #f0151f;
+    color: #1F2B8F;
 }
 .ratings-2 .cartype{
     font-weight: 600;
@@ -9756,12 +9757,12 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     padding-right: 20px;
     margin-bottom: 0;
     line-height: 49px;
-    color: #f0151f;
+    color: #1F2B8F;
 }
 
 
 a.nav-link.active{
-  color: #f0151f !important;
+  color: #1F2B8F !important;
 }
 
 .tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{

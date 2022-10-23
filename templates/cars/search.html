@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+
+{% block title %} | Search Result {% endblock %}
 {% block content %}
 
 {% load humanize %}
@@ -80,7 +82,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="form-group">
                                 <div class="range-slider">
-                                    <div data-min="0" data-max="150000" data-unit="USD" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                    <div data-min="0" data-unit="Naira" data-max="400000" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
@@ -106,7 +108,8 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Here's your <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          -->
         </div>
         <div class="row">
           {% for car in cars %}
@@ -179,7 +182,7 @@
                             <p class="cartype">{{ car.body_style }}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">CAD {{ car.price | intcomma }}</p>
+                            <p class="price">N {{ car.price | intcomma }}</p>
                         </div>
                     </div>
                 </div>
