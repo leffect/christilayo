@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'christilayoautos.urls'
@@ -166,3 +167,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'leffectious@gmail.com'
 EMAIL_HOST_PASSWORD = 'Akin868610q..,,'
 EMAIL_USE_TLS = True
+
+
+# Whitenoise settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
