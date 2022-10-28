@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$hi)+#$=wh5dv+$5-+0_iez+*+!5cggt$7kuqul!9tv(ms9llp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -90,16 +91,17 @@ WSGI_APPLICATION = 'christilayoautos.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'christilayo_db',
-        'USER': 'postgres',
-        'PASSWORD': 'Grace86',
-        'HOST': 'localhost',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'christilayo_db',
+#        'USER': 'postgres',
+#        'PASSWORD': 'Grace86',
+#        'HOST': 'localhost',
+#    }
+#}
 
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:Grace86@localhost/christilayo_db')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
